@@ -6,13 +6,14 @@ Function as a Service (FaaS) has been gaining popularity as a way to deploy comp
 ## Problem
 
 ## Contribution
-• A detailed characterization of the entire production FaaS
-workload at a large cloud provider;
-• A new policy for reducing the number of cold start function
-executions at a low resource provisioning cost;
-• Extensive simulation and experimental results based on
-real traces showing the benefits of the policy;
+• A detailed characterization of the entire production FaaS workload at a large cloud provider;
+
+• A new policy for reducing the number of cold start function executions at a low resource provisioning cost;
+
+• Extensive simulation and experimental results based on real traces showing the benefits of the policy;
+
 • An overview of our implementation in Azure Functions;
+
 • A large sanitized dataset containing production FaaS traces.
 
 ## Evaluation
