@@ -18,13 +18,13 @@ Function as a Service (FaaS) is a recent approach to doing Serverless applicatio
 ## Conclusion (extracted from paper)
 In this paper, we characterized the entire production FaaS workload of Azure Functions. The characterization unearthed several key observations for cold start and resource management. Based on them, we proposed a practical policy for reducing the number of cold starts at a low resource cost. We evaluated the policy using both simulations and a real implementation, and real workload traces. Our results showed that the policy can achieve the same number of cold starts at much lower resource cost, or keep the same resource cost but reduce the number of cold starts significantly. Finally, we overviewed our policy’s implementation in Azure Functions. We released sanitized traces from our characterization data at [Azure Functions Traces](https://github.com/Azure/AzurePublicDataset).
 
-## Review (extracted, but filtered, from paper)
+## Review
+
+## Related Work (extracted, but filtered, from paper)
 - **FaaS characterization**. A few studies [7,15,24–26,44] have characterized the main commercial FaaS providers, but only from the perspective of external users. They typically reverse engineer aspects of FaaS offerings, by running benchmark functions to collect various externally visible metrics. Another class of studies looks at the ways developers are using FaaS offerings, by looking at public application repositories [41]. While valuable, this approach cannot offer insights on the aggregate workload seen by a provider
 - **Optimizing FaaS serving**. Another set of relevant work considers optimizing different aspects of FaaS systems. Van Eyk et al. [42] identify performance-related challenges, including scheduling policies that minimize cold starts. For optimizing each cold start, Mohan et al. [32] find that pre-allocating virtual network interfaces that are later bound to new function containers can significantly reduce cold start times. SOCK [33] proposes to optimize the loading of Python functions in OpenLambda by smart caching of sets of libraries, and by using lightweight isolation mechanisms for functions. Replayable Execution [43] proposes checkpointing and sharing of memory among containers to speed up the startup times of a JVM-based FaaS system. 
 - **Cache management**. Finally, one might think that the problem of managing cold starts is similar to managing caches of variable-sized objects, such as Web page caches and others [4,8,36].
 For more related work, check it out in the paper.
-
-## Related Work
 
 ## Links
 - [Azure Functions Traces](https://github.com/Azure/AzurePublicDataset).
