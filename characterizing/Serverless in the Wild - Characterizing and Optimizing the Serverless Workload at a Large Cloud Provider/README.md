@@ -13,12 +13,11 @@ Function as a Service (FaaS) is a recent approach to doing Serverless applicatio
 - An overview of our implementation in Azure Functions;
 - A large sanitized dataset containing production FaaS traces.
 
-## Evaluation
-
 ## Conclusion
 In this paper, we characterized the entire production FaaS workload of Azure Functions. The characterization unearthed several key observations for cold start and resource management. Based on them, we proposed a practical policy for reducing the number of cold starts at a low resource cost. We evaluated the policy using both simulations and a real implementation, and real workload traces. Our results showed that the policy can achieve the same number of cold starts at much lower resource cost, or keep the same resource cost but reduce the number of cold starts significantly. Finally, we overviewed our policy’s implementation in Azure Functions. We released sanitized traces from our characterization data at [Azure Functions Traces](https://github.com/Azure/AzurePublicDataset).
 
 ## Review
+This paper provides a deep characterization of a production workload of FaaS applications and publicly shares a large dataset containing traces of this workload. The work is exquisitely well written and the main contribution is a watershed for future performance researches once now they have available an example of how applications behave in the real world. Thus, this article is strenuously relevant. I can't see any relevant flaw which is a worthy comment and I don't want to go nitpick on it.
 
 ## Related Work
 - **FaaS characterization**. A few studies [7,15,24–26,44] have characterized the main commercial FaaS providers, but only from the perspective of external users. They typically reverse engineer aspects of FaaS offerings, by running benchmark functions to collect various externally visible metrics. Another class of studies looks at the ways developers are using FaaS offerings, by looking at public application repositories [41]. While valuable, this approach cannot offer insights on the aggregate workload seen by a provider
