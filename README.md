@@ -14,6 +14,7 @@ Send us a email to join the confcall (via [google meet](https://meet.google.com/
 2. Serverless in the Wild: Characterizing and Optimizing the Serverless Workload at a Large Cloud Provider, USENIX ATC 2020
    * when: [13/10]
    * who: Matheus Lacerda
+   * preso: [link](https://docs.google.com/presentation/d/18sibzPwl1Iosv_neIflPs9VEi8WP6dK4GzY1amzRvn4/edit?usp=sharing)
 
 3. Carver: [Finding Important Parameters for Storage System Tuning, USENIX FAST 2020](https://www.usenix.org/conference/fast20/presentation/cao-zhen)
    * when: [20/oct]
